@@ -1,0 +1,68 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+div#loader {
+	position: relative;
+	height: 200px;
+	width: 200px;
+	margin: auto;
+	
+}
+.loading .red{
+    animation: rotating 8s infinite linear;
+}
+.loading .green{
+    animation: rotating 6s infinite linear;
+}
+.loading .blue{
+    animation: rotating 4s infinite linear;
+}
+
+
+div#loader .red {
+	display: inline-block;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: red;
+	opacity: 0.75;
+	transform-origin: 50% 50%;
+    
+}
+
+
+div#loader .green {
+	display: inline-block;
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	top: 12.5px;
+	left: 12.5px;
+	background: green;
+	opacity: 0.75;
+	transform-origin: 50% 50%;
+}
+
+
+div#loader .blue {
+	display: inline-block;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 25px;
+	left: 25px;
+	background: blue;
+	transform-origin: 50% 50%;
+}
+
+@keyframes rotating {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
